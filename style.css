@@ -1,0 +1,205 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(images/mainbg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* heading */
+.heading{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.heading p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(14, 54, 165);
+    padding: 5px;
+    font-size: 2em;
+    color:rgb(192, 204, 21);
+    letter-spacing: 5px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* section 1 */
+.section1{
+    background: url(images/1bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section1 .sectionheader1{
+    height: 250px;
+    position: relative;
+}
+.sectionheader1 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(139, 106, 13);
+    padding: 5px;
+    font-size: 18px;
+    color:rgb(20, 20, 20);
+    letter-spacing: 3px;
+}
+.section1 .txtbox1{
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    padding: 10px 20px;
+    font-family: sans-serif;
+}
+.txtbox1 h5{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.txtbox1 p{
+    font-size: 15px;
+}
+
+/* section 2 */
+.section2{
+    background: url(images/2bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section2 .sectionheader2{
+    height: 250px;
+    position: relative;
+}
+.sectionheader2 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(139, 106, 13);
+    padding: 5px;
+    font-size: 18px;
+    color:rgb(20, 20, 20);
+    letter-spacing: 3px;
+}
+.section2 .txtbox2{
+    background-color:grey;
+    text-align: center;
+    height: 200px;
+    padding: 10px 20px;
+    color: rgba(255, 255, 255, 0.8);
+    font-family: sans-serif;
+}
+.txtbox2 h5{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.txtbox2 p{
+    font-size: 15px;
+}
+
+/* section 3 */
+.section3{
+    background: url(images/3bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section3 .sectionheader3{
+    height: 250px;
+    position: relative;
+}
+.sectionheader3 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(139, 106, 13);
+    padding: 5px;
+    font-size: 18px;
+    color:rgb(20, 20, 20);
+    letter-spacing: 3px;
+}
+.section3 .txtbox3{
+    background-color: black;
+    text-align: center;
+    height: 200px;
+    padding: 10px 20px;
+    color: white;
+    font-family: sans-serif;
+}
+.txtbox3 h5{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.txtbox3 p{
+    font-size: 15px;
+}
+
+/* section 4 */
+.section4{
+    background: url(images/4bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.section4 .sectionheader4{
+    height: 250px;
+    position: relative;
+}
+.sectionheader4 p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(139, 106, 13);
+    padding: 5px;
+    font-size: 18px;
+    color:rgb(20, 20, 20);
+    letter-spacing: 3px;
+}
+.section4 .txtbox4{
+    background-color: white;
+    text-align: center;
+    height: 200px;
+    padding: 10px 20px;
+    color: gray;
+    font-family: sans-serif;
+}
+.txtbox4 h5{
+    font-size: 19px;
+    text-transform: capitalize;
+}
+.txtbox4 p{
+    font-size: 15px;
+}
+
+/* footer */
+.footer{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+.footer p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(14, 54, 165);
+    padding: 5px;
+    font-size: 1.5em;
+    letter-spacing: 8px;
+    font-weight: bold;
+    color:rgb(192, 204, 21);
+    font-family: 'Courier New', Courier, monospace;
+}
