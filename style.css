@@ -60,7 +60,7 @@ b{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
+    height: 400px;
 }
 h3{
     text-align: center;
@@ -236,7 +236,6 @@ p{
     background: rgba(209, 207, 207, 0.95);
 }
 .macbook-image-container > img{
-    /* object-fit: contain; */
     min-width: 350px;
     min-height: max-content;
 }
