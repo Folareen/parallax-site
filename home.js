@@ -12,7 +12,7 @@ const BTN_IMAGE_SRC_OBJ = {
 }
 
 // event listener
-document.querySelectorAll('button').forEach(btn => {btn.addEventListener('click', displayfunc)})
+BUTTON_ARRAYS.forEach(btn => {btn.addEventListener('click', displayfunc)})
 
 // functions
 function displayfunc(){
