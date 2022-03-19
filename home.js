@@ -1,24 +1,37 @@
-const MACBOOK_BTN = document.querySelector(".macbook-btn");
-// const 
+// all buttons and image src
+const BUTTON_ARRAYS = document.querySelectorAll('button');
 
+const BTN_IMAGE_SRC_OBJ = {
+    "macbook-btn" : "images/macbook.jpg",
+    "ipad-mini-btn" : "images/ipad-mini-6.jpg",
+    "imac-btn" : "images/imac-24.jpg",
+    "airpod-btn" : "images/airpod-3.jpg",
+    "iphone-13-btn" : "images/iphone-13.jpg",
+    "ipad-pro-btn" : "images/ipad-pro.jpg",
+    "apple-watch-btn" : "images/apple-watch-7.jpg"
+}
 
+// event listener
+document.querySelectorAll('button').forEach(btn => {btn.addEventListener('click', displayfunc)})
 
-MACBOOK_BTN.addEventListener('click', displayMacbookImage);
+// functions
+function displayfunc(){
+   displayImage(BTN_IMAGE_SRC_OBJ[this.className]);
+}
 
-
-function displayMacbookImage(){
-    let macbookImageContainer = document.createElement('div');
-    macbookImageContainer.className = "macbook-image-container";
-    const MACBOOK_IMAGE = document.createElement('img');
-    MACBOOK_IMAGE.src = "images/macbook2.jpg"
-    macbookImageContainer.append(MACBOOK_IMAGE);
+function displayImage(imageSrc){
+    let imageContainer = document.createElement('div');
+    imageContainer.className = "image-container";
+    const IMAGE = document.createElement('img');
+    IMAGE.src = imageSrc;
+    imageContainer.append(IMAGE);
     const CLOSE_BUTTON = document.createElement('button');
     CLOSE_BUTTON.innerText = "X";
     CLOSE_BUTTON.className = 'close-btn';
-    macbookImageContainer.append(CLOSE_BUTTON);
+    imageContainer.append(CLOSE_BUTTON);
     CLOSE_BUTTON.addEventListener('click', closeImage);
     function closeImage(){
-        macbookImageContainer.style.display = "none"
+        imageContainer.style.display = "none"
     }
-    document.body.append(macbookImageContainer);
+    document.body.append(imageContainer);
 }

@@ -21,6 +21,7 @@ ul{
 /* header */
 header{
     margin: 0;
+    padding: 0;
     width: 100vw;
     height: 100vh;
     display: flex;
@@ -102,7 +103,7 @@ p{
 
 /* macbook pro */
 .macbook{
-    background: url(images/macbook2.jpg);
+    background: url(images/macbook.jpg);
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -222,7 +223,7 @@ p{
     color: aliceblue;
 }
 
-.macbook-image-container{
+.image-container{
     position: fixed;
     top: 0;
     bottom: 0;
@@ -235,7 +236,7 @@ p{
     align-items: center;
     background: rgba(209, 207, 207, 0.95);
 }
-.macbook-image-container > img{
+.image-container > img{
     min-width: 350px;
     min-height: max-content;
 }
