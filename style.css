@@ -10,181 +10,253 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
-/* heading */
-.heading{
+/*...for 425px and below screens... */
+
+/* header */
+header{
     margin: 0;
     width: 100vw;
     height: 100vh;
-    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.heading p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(14, 54, 165);
+header h1{
     padding: 5px;
-    font-size: 2em;
-    color:rgb(192, 204, 21);
-    letter-spacing: 5px;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 255, 255);    color:rgb(0, 0, 0);
+    color: rgb(37, 37, 37);
+    font-size: 2.1em;
     font-weight: bold;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    font-weight: bold;
+    box-shadow: 0 2px 15px 10px rgb(0, 0, 0);
+    text-align: center;
+    width: min-content;
+}
+b{
+    font-size: 1em;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-family: cursive;
+    font-family: verdana;
+    text-shadow: 1px 2px 1px rgb(49, 46, 46);
+    letter-spacing: 0;
 }
 
-/* section 1 */
-.section1{
-    background: url(images/1bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
+/* common styling */
+.macbook, .ipad-mini, .imac, .airpod, .iphone-13, .ipad-pro, .apple-watch{
+    height: max-content;
+    font-family: sans-serif;
 }
-.section1 .sectionheader1{
-    height: 250px;
-    position: relative;
+.macbook-header, .ipad-mini-header, .imac-header, .airpod-header, .iphone-13-header, .ipad-pro-header, .apple-watch-header{
+    padding: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
 }
-.sectionheader1 p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(139, 106, 13);
-    padding: 5px;
-    font-size: 18px;
-    color:rgb(20, 20, 20);
-    letter-spacing: 3px;
-}
-.section1 .txtbox1{
-    background-color: white;
+h3{
     text-align: center;
-    height: 200px;
+    letter-spacing: 3px;
+    text-transform: capitalize;
+    font-weight: bold;
+    font-size: 18px;
+    box-shadow: 0 2px 5px black;
+}
+h3> button{
+    border: none;
+    background: inherit;
+    color: inherit;
+    font-size: inherit;
+    text-transform: inherit;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    height: 100%;
+}
+h3:active{
+    transform: scale(0.95);
+    box-shadow: 0 2px 10px black;
+}
+.macbook-txt-box, .ipad-mini-txt-box, .imac-txt-box, .airpod-txt-box, .iphone-13-txt-box, .ipad-pro-txt-box, .apple-watch-txt-box{
+    text-align: center;
+    height: max-content;
     padding: 10px 20px;
     font-family: sans-serif;
 }
-.txtbox1 h5{
+h5{
     font-size: 19px;
     text-transform: capitalize;
 }
-.txtbox1 p{
+p{
     font-size: 15px;
 }
 
-/* section 2 */
-.section2{
-    background: url(images/2bg.jpg);
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-}
-.section2 .sectionheader2{
-    height: 250px;
-    position: relative;
-}
-.sectionheader2 p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(139, 106, 13);
-    padding: 5px;
-    font-size: 18px;
-    color:rgb(20, 20, 20);
-    letter-spacing: 3px;
-}
-.section2 .txtbox2{
-    background-color:grey;
-    text-align: center;
-    height: 200px;
-    padding: 10px 20px;
-    color: rgba(255, 255, 255, 0.8);
-    font-family: sans-serif;
-}
-.txtbox2 h5{
-    font-size: 19px;
-    text-transform: capitalize;
-}
-.txtbox2 p{
-    font-size: 15px;
-}
 
-/* section 3 */
-.section3{
-    background: url(images/3bg.jpg);
-    background-position: center;
-    background-size: cover;
+/* macbook pro */
+.macbook{
+    background: url(images/macbook2.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
-.section3 .sectionheader3{
-    height: 250px;
-    position: relative;
-}
-.sectionheader3 p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: rgb(139, 106, 13);
-    padding: 5px;
-    font-size: 18px;
+.macbook-header h3{
+    background-color: rgb(85, 15, 36);
     color:rgb(20, 20, 20);
-    letter-spacing: 3px;
+    color: silver;
 }
-.section3 .txtbox3{
-    background-color: black;
-    text-align: center;
-    height: 200px;
-    padding: 10px 20px;
+.macbook .macbook-txt-box{
+    background-color: rgb(119, 80, 92);
     color: white;
-    font-family: sans-serif;
-}
-.txtbox3 h5{
-    font-size: 19px;
-    text-transform: capitalize;
-}
-.txtbox3 p{
-    font-size: 15px;
 }
 
-/* section 4 */
-.section4{
-    background: url(images/4bg.jpg);
-    background-position: center;
+/* ipad mini 6*/
+.ipad-mini{
+    background: url(images/ipad-mini-6.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     background-attachment: fixed;
+    background-position: center;
 }
-.section4 .sectionheader4{
-    height: 250px;
-    position: relative;
+.ipad-mini-header h3{
+    background-color: rgb(27, 26, 22);
+    color:rgb(245, 224, 224);
 }
-.sectionheader4 p{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.ipad-mini .ipad-mini-txt-box{
+    background-color:rgb(59, 59, 59);
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* imac */
+.imac{
+    background: url(images/imac-24.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.imac-header h3{
+    background-color: rgb(107, 82, 12);
+    color:rgb(255, 255, 255);
+}
+.imac .imac-txt-box{
+    background-color: rgb(158, 128, 47);
+    color: rgb(255, 255, 255);
+}
+
+/* Airpods 3 */
+.airpod{
+    background: url(images/airpod-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.airpod-header h3{
     background-color: rgb(139, 106, 13);
-    padding: 5px;
-    font-size: 18px;
-    color:rgb(20, 20, 20);
-    letter-spacing: 3px;
+    color:rgb(255, 255, 255);
 }
-.section4 .txtbox4{
-    background-color: white;
-    text-align: center;
-    height: 200px;
-    padding: 10px 20px;
-    color: gray;
-    font-family: sans-serif;
+.airpod .airpod-txt-box{
+    background-color: rgb(70 46 5);
+    color: rgb(158, 128, 47);
+    color: rgb(255, 255, 255);
 }
-.txtbox4 h5{
-    font-size: 19px;
-    text-transform: capitalize;
+
+/*iphone 13 */
+.iphone-13{
+    background: url(images/iphone-13.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+
 }
-.txtbox4 p{
-    font-size: 15px;
+.iphone-13-header h3{   
+    background-color: silver;
+    color:rgb(0, 0, 0);
 }
+.iphone-13 .iphone-13-txt-box{
+    background-color: rgb(48 85 114);
+    color: rgb(193 153 149);
+}
+
+/*ipad pro */
+.ipad-pro{
+    background: url(images/ipad-pro.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.ipad-pro-header h3{   
+    background-color: rgb(35 119 238);
+    color:rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+.ipad-pro .ipad-pro-txt-box{
+    background-color: rgb(114, 48, 108);
+    color: rgb(255, 255, 255);
+}
+
+.apple-watch{
+    background: url(images/apple-watch-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+.apple-watch-header h3{    
+    background-color: aliceblue;
+    color:rgb(0, 0, 0);
+}
+.apple-watch .apple-watch-txt-box{
+    background-color: rgb(120 49 5);
+    color: aliceblue;
+}
+
+.macbook-image-container{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(209, 207, 207, 0.95);
+}
+.macbook-image-container > img{
+    /* object-fit: contain; */
+    min-width: 350px;
+    min-height: max-content;
+}
+.close-btn{
+    border: none;
+    background: white;
+    color: brown;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2em;
+    height: max-content;
+    width: max-content;
+    font-weight: bolder;
+    padding: 7px 12px;
+}
+
 
 /* footer */
-.footer{
+/* .footer{
     margin: 0;
     width: 100vw;
     height: 100vh;
@@ -202,4 +274,13 @@ body{
     font-weight: bold;
     color:rgb(192, 204, 21);
     font-family: 'Courier New', Courier, monospace;
-}
+} */
+
+
+
+/* for larger screen */
+/* @media screen and (min-width:426px) {
+    body{
+        font-size: 4em;
+    }
+} */
