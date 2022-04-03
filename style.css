@@ -64,6 +64,7 @@ nav{
     width: 30%;
     max-width: 200px;
     left: -100%;
+    transition: all 1s;
 }
 nav button{
     width: 50px;
@@ -88,11 +89,13 @@ nav button:hover{
     position: fixed;
     top: 0;
     left: 0;
+    transition: visibility .8s;
 }
 .close{
     position: absolute;
     right: 0;
     top: 0;
+    transition: visibility .8s;
 }
 nav ul{
     width: 100%;
@@ -116,9 +119,8 @@ nav a{
     text-align: center;
     text-decoration: none;
     color: rgb(0, 0, 0);
-    background-color: white;
-    border: 1px solid black;
-    padding: 5px;
+    background-color: rgb(218, 218, 218);
+    padding: 10px;
     font-size: 1.1em;
     font-family: sans-serif;
     box-sizing: border-box;
