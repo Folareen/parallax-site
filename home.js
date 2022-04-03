@@ -1,5 +1,8 @@
 // all buttons and image src
-const BUTTON_ARRAYS = document.querySelectorAll('button');
+const BUTTON_ARRAYS = document.querySelectorAll('ul button');
+const OPEN_BUTTON = document.querySelector('.open');
+const CLOSE_BUTTON = document.querySelector('.close');
+const NAV = document.querySelector('nav');
 
 const BTN_IMAGE_SRC_OBJ = {
     "macbook-btn" : "images/macbook.jpg",
@@ -12,7 +15,9 @@ const BTN_IMAGE_SRC_OBJ = {
 }
 
 // event listener
-BUTTON_ARRAYS.forEach(btn => {btn.addEventListener('click', displayfunc)})
+BUTTON_ARRAYS.forEach(btn => {btn.addEventListener('click', displayfunc)});
+OPEN_BUTTON.addEventListener('click', openNav);
+CLOSE_BUTTON.addEventListener('click', closeNav);
 
 // functions
 function displayfunc(){
@@ -27,6 +32,7 @@ function displayImage(imageSrc){
     imageContainer.append(IMAGE);
     const CLOSE_BUTTON = document.createElement('button');
     CLOSE_BUTTON.innerText = "X";
+    CLOSE_BUTTON.style.cursor = "pointer";
     CLOSE_BUTTON.className = 'close-btn';
     imageContainer.append(CLOSE_BUTTON);
     CLOSE_BUTTON.addEventListener('click', closeImage);
@@ -34,4 +40,13 @@ function displayImage(imageSrc){
         imageContainer.style.display = "none"
     }
     document.body.append(imageContainer);
+}
+function openNav(){
+    NAV.style.left = "0";
+    OPEN_BUTTON.style.visibility = "hidden";
+}
+function closeNav(){
+    NAV.style.left = "-100%";
+    OPEN_BUTTON.style.visibility = "hidden";
+    OPEN_BUTTON.style.visibility = "visible";
 }
