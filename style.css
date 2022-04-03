@@ -96,6 +96,9 @@ nav button:hover{
     right: 0;
     top: 0;
     transition: visibility .8s;
+    color: rgb(139, 0, 0);
+    font-size: 1.7em;
+    font-weight: 900;
 }
 nav ul{
     width: 100%;
