@@ -4,6 +4,8 @@ a website containing an article on top 7 best gadgets of 2021; with parallax scr
 ## live preview:
 [https://parallax-website1.netlify.app/] (https://parallax-website1.netlify.app/)
 
+[parallax website](https://parallax-website1.netlify.app/)
+
 
 credits:
 text contents gotten from Kobe V's article on medium
