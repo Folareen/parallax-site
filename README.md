@@ -2,7 +2,7 @@
 a website containing an article on top 7 best gadgets of 2021; with parallax scrolling effect.
 
 ## live preview:
-(https://parallax-website1.netlify.app/)[https://parallax-website1.netlify.app/]
+[https://parallax-website1.netlify.app/](https://parallax-website1.netlify.app/)
 
 
 credits:
