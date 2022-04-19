@@ -63,43 +63,50 @@ nav{
     align-items: center;
     width: 40%;
     max-width: 300px;
-    left: -100%;
-    transition: all 1s;
+    left: 0;
+    transition: all .5s ease-in-out;
+    z-index: 1;
 }
-nav button{
-    width: 50px;
-    height: 50px;
-    font-size: 1.5em;
-    align-self: flex-start;
-    border: 0;
-    transition: all .5;
+
+/* font-size: 1.7em; */
+.hamburger{
+    position: absolute;
+    left: 0;
+    border: none;
+    background-color: rgb(235, 214, 214);
+    padding: 10px;
+    z-index: 2;
 }
-nav button:hover{
-    color: rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
+.hamburger:hover{
     cursor: pointer;
-    border: 1px solid rgb(255, 255, 255);
 }
-.nav-buttons{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
+.hamburger div{
+    height: 4px;
+    width: 24px;
+    background-color: black;
+    margin-bottom: 3px;
+    transition: all .5s ease-in-out;
 }
+.hamburger.close div{
+    background-color:rgb(167, 10, 10);
+}
+.hamburger.close .hamburger-top{
+    transform: rotate(405deg);
+    transform-origin: 7px;
+}
+.hamburger.close .hamburger-middle{
+    display: none;
+}
+.hamburger.close .hamburger-bottom{
+    transform: rotate(-405deg);
+    transform-origin: 7px;
+}
+
 .open{
-    position: fixed;
     top: 0;
     left: 0;
-    transition: visibility .8s;
 }
-.close{
-    position: absolute;
-    right: 0;
-    top: 0;
-    transition: visibility .8s;
-    color: rgb(139, 0, 0);
-    font-size: 1.7em;
-    font-weight: 900;
-}
+
 nav ul{
     width: 100%;
     display: flex;
@@ -111,7 +118,11 @@ nav ul{
     list-style: none;
     background-color: rgb(196, 192, 192);
     height: 100%;
+    position: relative;
+    left: -310px;
+    transition: all .5s ease-in-out;
 }
+
 nav li{
     width: 100%;
     margin: 0;

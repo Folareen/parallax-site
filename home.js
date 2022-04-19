@@ -1,8 +1,7 @@
 // all buttons and image src
 const BUTTON_ARRAYS = document.querySelectorAll('ul button');
-const OPEN_BUTTON = document.querySelector('.open');
-const CLOSE_BUTTON = document.querySelector('.close');
-const NAV = document.querySelector('nav');
+const NAV_BUTTON = document.querySelector('.hamburger')
+const NAV = document.querySelector('ul');
 
 const BTN_IMAGE_SRC_OBJ = {
     "macbook-btn" : "images/macbook.jpg",
@@ -16,8 +15,7 @@ const BTN_IMAGE_SRC_OBJ = {
 
 // event listener
 BUTTON_ARRAYS.forEach(btn => {btn.addEventListener('click', displayfunc)});
-OPEN_BUTTON.addEventListener('click', openNav);
-CLOSE_BUTTON.addEventListener('click', closeNav);
+NAV_BUTTON.addEventListener('click', nav)
 
 // functions
 function displayfunc(){
@@ -41,12 +39,8 @@ function displayImage(imageSrc){
     }
     document.body.append(imageContainer);
 }
-function openNav(){
-    NAV.style.left = "0";
-    OPEN_BUTTON.style.visibility = "hidden";
-}
-function closeNav(){
-    NAV.style.left = "-100%";
-    OPEN_BUTTON.style.visibility = "hidden";
-    OPEN_BUTTON.style.visibility = "visible";
+
+function nav(){
+    NAV_BUTTON.classList.toggle("close")
+    NAV.classList.toggle("open")
 }
